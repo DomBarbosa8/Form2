@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configurações da página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/Google-Noto-Emoji-Food-Drink-32439-beer-mug.ico" type="image/x-icon">
+        
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Titulo da página -->
+    <title>WeBreja</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="https://images.unsplash.com/photo-1592478384392-32aaa92ee421?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="garrafa" alt="garrafa">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+           
+            <h1>Bota a cerva pra gelar, webrejeiro!!!</h1>
+
+            <!--Iniciou o formulario-->
+            <form action="#" method="post">
+                <!-- Seção de dados Pessoais -->
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+
+                    <label for="endereco">Endereço</label>
+                    <textarea name="endereco" id="endereco" cols="30" rows="5"></textarea>
+                </fieldset>
+
+                <!--Seção de Assinatura-->
+                <fieldset>
+                    <legend>Escolha sua Assinatura</legend>
+                    <select name="assinatura" id="assinatura">
+                        <option value="">Selecione a sua opção</option>
+                        <optgroup label="Premium">
+                            <option value="Kit20+Brinde">Kit 20 brejas + Brinde</option>
+                            <option value="Kit10+Brinde">Kit 10 brejas + Brinde</option>
+                            
+                        </optgroup>
+                        <optgroup label="Básico">
+                            <option value="Kit5">Kit 5 brejas</option>
+                            <option value="Kit3">Kit 3 brejas</option>
+                            
+                        </optgroup>
+                    </select>
+                </fieldset>
+
+                <!--Seção de Opcionais-->
+                <fieldset>
+                    <legend>Opcionais</legend>
+                    <input type="checkbox" name="cooler" id="cooler">
+                    <label for="cooler">Cooler</label>
+                    <input type="checkbox" name="bolacha" id="bolacha">
+                    <label for="bolacha">Bolacha</label>
+                    <input type="checkbox" name="abridor" id="abridor">
+                    <label for="abridor">Abridor</label>
+                </fieldset>
+
+                <!-- Seção de pagamento -->
+                <fieldset>
+                    <legend>Método de pagamento</legend>
+                    <input type="radio" name="pagamento" id="dinheiro" value="dinheiro" checked>
+                    <label for="dinheiro">Dinheiro</label>
+                    <input type="radio" name="pagamento" id="credito" value="credito" checked>
+                    <label for="credito">Credito</label>
+                    <input type="radio" name="pagamento" id="debito" value="debito" checked>
+                    <label for="debito">Debito</label>
+                </fieldset>
+
+                <!--Seção de agendamento-->
+                <fieldset>
+                    <legend>Agendar para quando?</legend>
+                    <input type="date" name="data" id="data">
+                </fieldset>
+
+                <!-- Seção de botões -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+
+            </form>
+    </div>
+    </main>
+</body>
+
+</html>
